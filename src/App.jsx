@@ -65,6 +65,15 @@ export default class App extends React.Component {
       this.selectAnswer(initAnswer, this.state.currentId)
   }
 
+  componentDidUpdate(prevProps, prevState, snapshot) {
+
+      const scrollArea = document.getElementById("scroll-area");
+      if(scrollArea) {
+        scrollArea.scrollTop = scrollArea.scrollHeight;
+      }
+
+  }
+
   render(){
     return (
         <section className="c-section">
