@@ -37,6 +37,12 @@ export default class App extends React.Component {
         case (nextQuestionId === 'init'):
           this.displayNextQuestion(nextQuestionId)
           break;
+        case (/^https:*/.test(nextQuestionId)):
+            const a = document.createElement('a');
+            a.href = nextQuestionId;
+            a.target = '_blank';
+            a.click();
+          break;
         default:
             const chat = {
               text:selectedAnswer,
@@ -50,7 +56,7 @@ export default class App extends React.Component {
             })
 
             this.setState({
-              chats: chat
+              chats: chat,
             })
 
             this.displayNextQuestion(nextQuestionId)
