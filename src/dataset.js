@@ -1,12 +1,12 @@
 const defaultDataset = {
     "init": {
         answers: [
-            {content: "仕事を依頼したい", nextId: "job_offer"},
-            {content: "エンジニアのキャリアについて相談したい", nextId: "consultant"},
-            {content: "学習コミュニティについて知りたい", nextId: "community"},
-            {content: "お付き合いしたい", nextId: "dating"},
+            {content: "大学祭実行委員会について聞きたい", nextId: "job_offer"},
+            {content: "大学祭に行きたい", nextId: "consultant"},
+            {content: "協賛について聞きたい", nextId: "community"},
+            {content: "屋台を出したい", nextId: "dating"},
         ],
-        question: "こんにちは！🐯トラハックへのご用件はなんでしょうか？",
+        question: "こんにちは！大学祭実行委員会について聞きたいことがあればこちらから相談してください。",
     },
     "job_offer": {
         answers: [
